@@ -1,12 +1,24 @@
 /* Your CSS will go here */ 
 
 body{
-	background:url('background.gif');
-	    /*background-siz: ;*/
+	font-family: 'Shadows Into Light', cursive;
+	    background: rgb(239, 253, 240);
+
+
 
 }
 h1{
 	font-family: 'Raleway', sans-serif;
+    background: rgba(239, 253, 240, 0.71);
+
+}
+
+.jumbotron h1{
+    text-shadow: 4px 2px 7px #5e813c;
+        width: 450px;
+            color: rgb(52, 32, 21);
+
+
 
 }
 h1, .btn, input, img{
@@ -16,21 +28,31 @@ h1, .btn, input, img{
 }
 
 .container .jumbotron {
-	border-radius: 50px;
+	background:url('background.gif');
+    border-radius: 30px;
     margin-top: 10px;
     background-color: #ffeec9;
 }
 .btn {
-	    margin-top: 10px;
+	margin-top: 10px;
+	width: 100px;
+    height: 50px;
+    font-size: 2em;
+}
+
+button.btn.btn-primary.active{
+	    background: rgb(110, 75, 55);
+	    	text-shadow: 1px 0px 1px black;
+
 
 }
+
 img{
-	height: 320px;
+	height: 260px;
 
 }
 
-.completed {
-	color: gray;
+li:nth-child(2n) .completed, .completed {
 	text-decoration: line-through;
 }
 
@@ -40,7 +62,7 @@ img{
 
 ul {
 	list-style: none;
-	margin: 0;
+    margin: 0px 100px;
     /*padding-left: 0px;
     padding-bottom: 10px;*/
     padding: 10px 100px;
@@ -48,17 +70,20 @@ ul {
 }
 
 li {
-	background: #fff;
+    background: #a77d51;
 	height: 40px;
 	line-height: 40px;
-	color: #666;
+    color: #ecece5;
 	margin-bottom: 5px;
-
+	font-size: 2em;
+	text-shadow: 1px 0px 1px black;
 }
 
 li:nth-child(2n){
-	background: #0c6c94;
-    color: #ececec;}
+	background: rgb(110, 75, 55);
+    color: #ececec;
+    text-shadow: 1px 0px 1px black;
+}
 
 span {
 	background: #e74c3c;
@@ -78,10 +103,8 @@ li:hover span {
 }
 
 input {
-	font-size: 18px;
-	color: #2980b9;
+	font-size: 20px;
 	background-color: #f7f7f7;
-	width: 100%;
 	padding: 13px 13px 13px 20px;
 	box-sizing: border-box;
 	border: 3px solid rgb(0,0,0);

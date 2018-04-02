@@ -2,6 +2,7 @@
 console.log("connected")
 const toDoListArr = []
 
+
 // $('#formID').submit(function(e){
 // 	//prevent the GET request
 // 	e.preventDefault();
@@ -36,10 +37,11 @@ $("ul").on("click", "span", function(event){
 $("button").click(function(event){
 		//grabbing new todo text from input
 		event.preventDefault();
-		let todoText = $('#newInput').val();
+		let toDoText = $('#newInput').val();
 		// $(this).val("");
 		//create a new li and add to ul
-		$('li').first().before("<li><span><i class='fa fa-trash'></i></span> " + todoText + "</li>")
+		$('li').first().before("<li><span><i class='fa fa-trash'></i></span> " + toDoText + "</li>")
+		$('#newInput').val('')
 });
 
 $("input[type='text']").keypress(function(event){
@@ -50,5 +52,7 @@ $("input[type='text']").keypress(function(event){
 		// $(this).val("");
 		//create a new li and add to ul
 		$('li').first().before("<li><span><i class='fa fa-trash'></i></span> " + todoText + "</li>")
+		$('#newInput').val('')
+
 	}
 });
