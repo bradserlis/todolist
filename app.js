@@ -27,11 +27,11 @@ $("ul").on("click", "li", function(){
 });
 
 $("ul").on("click", "span", function(event){
-	$(this).parent().fadeOut('slow',)
-	// $(this).parent().remove();
-		// $(this).remove();
+	$(this).parent().fadeOut(500,function(){
+		$(this).remove();
 	});
-
+	event.stopPropagation();
+});
 
 $("button").click(function(event){
 		//grabbing new todo text from input
